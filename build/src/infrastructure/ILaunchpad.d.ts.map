@@ -1,1 +1,0 @@
-{"version":3,"file":"ILaunchpad.d.ts","sourceRoot":"","sources":["../../../src/infrastructure/ILaunchpad.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,UAAU;IACzB,QAAQ,IAAI,MAAM,EAAE,CAAC;IACrB,aAAa,CAAC,QAAQ,EAAE,MAAM,GAAG,IAAI,CAAC;IACtC,KAAK,CAAC,IAAI,EAAE,MAAM,EAAE,GAAG,IAAI,CAAC;IAC5B,KAAK,IAAI,IAAI,CAAC;IACd,WAAW,IAAI,IAAI,CAAC;IACpB,SAAS,IAAI,IAAI,CAAC;CACnB"}
