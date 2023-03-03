@@ -2,15 +2,18 @@ import { LaunchpadMini } from "./../infrastructure/LaunchpadMini";
 import { ILaunchpad } from "../infrastructure/ILaunchpad";
 import { GridSection } from "./GridManager";
 import { TextManager } from "./TextManager";
+import { TickAnimation } from "./TickAnimation";
 
 export class Clock {
   private textManager: TextManager;
+  private tickAnimation: TickAnimation;
 
   private oldHours: number[];
   private oldMinutes: number[];
 
   constructor(launchpad: ILaunchpad) {
     this.textManager = new TextManager(launchpad);
+    this.tickAnimation = new TickAnimation(launchpad);
   }
 
   public start() {
@@ -24,6 +27,7 @@ export class Clock {
 
       this.setHoursOnLaunchpad(hours);
       this.setMinutesOnLaunchpad(minutes);
+      this.tickAnimation.animateTick();
     }, 1000);
   }
 
@@ -38,7 +42,7 @@ export class Clock {
       this.oldHours = hours;
       console.log("setting hours on launchpad");
       this.textManager.SetNumberAtSection(hours[0], GridSection.TOP_LEFT_SECTION, LaunchpadMini.GREEN_COLOUR);
-      this.textManager.SetNumberAtSection(hours[1], GridSection.TOP_RIGHT_SECTION, LaunchpadMini.RED_COLOUR);
+      this.textManager.SetNumberAtSection(hours[1], GridSection.TOP_RIGHT_SECTION, LaunchpadMini.ORANGE_COLOUR);
     }
   }
 
@@ -49,7 +53,7 @@ export class Clock {
       this.oldMinutes = minutes;
       console.log("setting minutes on launchpad");
       this.textManager.SetNumberAtSection(minutes[0], GridSection.BOTTOM_LEFT_SECTION, LaunchpadMini.YELLOW_COLOUR);
-      this.textManager.SetNumberAtSection(minutes[1], GridSection.BOTTOM_RIGHT_SECTION, LaunchpadMini.ORANGE_COLOUR);
+      this.textManager.SetNumberAtSection(minutes[1], GridSection.BOTTOM_RIGHT_SECTION, LaunchpadMini.RED_COLOUR);
     }
   }
 }
