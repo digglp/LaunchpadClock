@@ -1,4 +1,4 @@
-import { Grid, NumberGrids } from "../../infrastructure/NumberGrids";
+import { Grid, NumberGrids } from "../infrastructure/NumberGrids";
 import { LaunchpadMiniOld } from "./LanchpadMiniOld";
 import _ from "lodash";
 

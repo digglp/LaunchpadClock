@@ -1,15 +1,19 @@
+import { ConsoleHandler } from "./../domain-handlers/ConsoleHandler";
 import { LaunchpadMini } from "./../infrastructure/LaunchpadMini";
-import { NumberBuilder } from "../domain/domain-handlers/NumberBuilder";
+import { NumberBuilder } from "../domain-handlers/NumberBuilder";
 
 export class Console {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public static async main(_args?: string[]): Promise<void> {
-    console.log("Hello World!");
-
     const numberBuilder = new NumberBuilder();
 
-    const launchpadMini = new LaunchpadMini();
-    launchpadMini.write([1]);
+    const handler = new ConsoleHandler(new LaunchpadMini());
+
+    handler.displayIntro();
+    handler.readPortInput();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+    //launchpadMini.write([1]);
     await numberBuilder.tick();
     //implement  a clock mm:ss
     /*

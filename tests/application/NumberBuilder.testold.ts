@@ -1,4 +1,4 @@
-import { NumberBuilder } from "../../src/domain/domain-handlers/NumberBuilder";
+import { NumberBuilder } from "../../src/domain-handlers/NumberBuilder";
 import { Grid } from "../../src/infrastructure/NumberGrids";
 
 describe("NumberBuilder Test Suite", () => {
