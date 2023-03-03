@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "build": "eslint . && npx tsc"
+    "build": "eslint . && npx tsc",
+    "webpack": "webpack --config webpack.config.js",
+    "copy-package-json": "cp package.json dist/package.json",
+    "dist": "npm run webpack && npm run copy-package-json"
   },
   "author": "",
   "license": "ISC",

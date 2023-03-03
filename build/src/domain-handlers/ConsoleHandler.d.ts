@@ -7,6 +7,6 @@ export declare class ConsoleHandler {
     private displayPorts;
     readPortInput(): void;
     handleInput(input: string): void;
-    startDisplay(): void;
+    private startDisplay;
 }
 //# sourceMappingURL=ConsoleHandler.d.ts.map

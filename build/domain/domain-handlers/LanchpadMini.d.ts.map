@@ -1,1 +1,0 @@
-{"version":3,"file":"LanchpadMini.d.ts","sourceRoot":"","sources":["../../../src/domain/domain-handlers/LanchpadMini.ts"],"names":[],"mappings":"AAIA,qBAAa,aAAa;IACjB,UAAU,SAAK;IACf,YAAY,SAAO;IACnB,aAAa,SAAM;IAE1B,MAAM,MAAgC;;IAK/B,WAAW;IAIX,OAAO,CAAC,GAAG,EAAE,MAAM,EAAE,GAAG,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM;IAQtE,OAAO,CAAC,cAAc;CAGvB"}
