@@ -3,6 +3,9 @@ Launchpad clock turns the Launchpad Mini into a digital clock.
 
 This NodeJS console application allows you to turn your Launchpad Mini device into a digital clock. The time is displayed on the 8x8 grid.
 
+![Screenshot](LaunchpadClock.jpg)
+
+
 ## Requirements
 
 To use this application, you will need:
