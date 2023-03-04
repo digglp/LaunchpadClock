@@ -40,7 +40,7 @@ export class Clock {
 
     if (this.oldHours[0] !== hours[0] || this.oldHours[1] !== hours[1]) {
       this.oldHours = hours;
-      console.log("setting hours on launchpad");
+
       this.textManager.SetNumberAtSection(hours[0], GridSection.TOP_LEFT_SECTION, LaunchpadMini.GREEN_COLOUR);
       this.textManager.SetNumberAtSection(hours[1], GridSection.TOP_RIGHT_SECTION, LaunchpadMini.ORANGE_COLOUR);
     }
@@ -51,7 +51,7 @@ export class Clock {
 
     if (this.oldMinutes[0] !== minutes[0] || this.oldMinutes[1] !== minutes[1]) {
       this.oldMinutes = minutes;
-      console.log("setting minutes on launchpad");
+
       this.textManager.SetNumberAtSection(minutes[0], GridSection.BOTTOM_LEFT_SECTION, LaunchpadMini.YELLOW_COLOUR);
       this.textManager.SetNumberAtSection(minutes[1], GridSection.BOTTOM_RIGHT_SECTION, LaunchpadMini.RED_COLOUR);
     }
