@@ -19,6 +19,9 @@ To use this application, you will need:
 1.  Clone or download the repository to your local machine.
 2.  In the project directory, run `npm install` to install the required packages.
 
+## Installing on a Raspberry Pi
+
+1. install `sudo apt-get install libasound2-dev`
 ## Usage
 
 1.  Connect your Launchpad Mini device to your computer.
